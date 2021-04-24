@@ -1,0 +1,30 @@
+{
+  "manifest_version":2,
+  "name":"Social Cluster",
+  "version":"1.0",
+  
+  "description" : "Social cluster contains one point access to all your social accounts",
+  
+  "icons":{
+    "40":"icons/main_icon.svg",
+    "90":"icons/main_icon.svg"
+  },
+  
+  "browser_action":{
+    "browser_style":true,
+    "default_title":"My Social Cluster",
+    "default_popup":"social_cluster.html"
+  },
+
+  "background":{
+    "page" :"social_cluster.html"
+  },
+  
+  "content_scripts":[
+  {
+    "matches" : ["*://*.swecha.org/*"],
+    "js":["scripts/social_cluster.js"]
+  }
+]
+
+}

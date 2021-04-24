@@ -1,0 +1,24 @@
+{
+  "name": "heroku-sample-app",
+  "version": "1.0.0",
+  "description": "A smaple app",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ejs": "^2.5.6"
+  }
+}
